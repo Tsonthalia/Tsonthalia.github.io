@@ -12,13 +12,10 @@ body {
   border-radius: 8px;
   border: none;
   font-size: 50px;
-  float: right;
-  margin-right: 10px
 }
 
 #welcome {
-  text-align: left;
-  margin-bottom: -100px;
+  margin-bottom: 10px;
   font-size: 100px;
 }
 
@@ -32,6 +29,7 @@ body {
   margin-top: 20px;
   border-radius: 20px;
   border: none;
+  margin-bottom: 10px;
 }
 
 #add {

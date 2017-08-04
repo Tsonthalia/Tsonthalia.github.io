@@ -8,8 +8,9 @@
   <body>
     <h1 id="welcome">Welcome, </h1>
     <button id="signOut" type="submit">Sign Out</button>
-    <br><br><br><br><br>
+    <br><br>
     <input id="newItem" type="text" name="newItem">
+    <br>
     <input id="add" type="submit" name="" value="Add Item">
     <br>
     <ul class="list"></ul>
@@ -48,10 +49,10 @@
             console.log(snapshot.val());
             var item = document.createElement("li")
             item.innerText = snapshot.val()
-            item.style.fontSize = "200px"
+            item.style.fontSize = "100px"
             var remove = document.createElement("button")
             remove.innerText = "×"
-            remove.style.fontSize = "150px"
+            remove.style.fontSize = "100px"
             remove.style.background = "none"
             remove.style.border = "none"
             remove.style.color = "white"
