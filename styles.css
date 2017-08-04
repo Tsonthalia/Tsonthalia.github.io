@@ -45,7 +45,7 @@ body {
 
 .list {
   display: inline-block;
-  margin-right: 20px;
+  text-align: left;
 }
 
 /* login.html */
