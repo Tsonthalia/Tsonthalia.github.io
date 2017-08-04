@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 class="lHeader">Login</h1>
+
+    <input id="lEmail" type="text" placeholder="email">
+    <input id="lPassword" type="password" placeholder="password">
+    <button id="lButton" type="submit">Login</button>
+    <br>
+    <a id="registerButton" href="register.html">Register</a>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBrpM4NxrijFkniKo4fI3eubaDmsF3r-eY",
+        authDomain: "todo-list-72672.firebaseapp.com",
+        databaseURL: "https://todo-list-72672.firebaseio.com",
+        projectId: "todo-list-72672",
+        storageBucket: "",
+        messagingSenderId: "515541036119"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <script>
+      var lEmail = document.getElementById('lEmail')
+      var lPassword = document.getElementById('lPassword')
+      var lButton = document.getElementById('lButton')
+
+      var l = document.querySelector('h1')
+
+      lButton.onclick = function() {
+        firebase.auth().signInWithEmailAndPassword(lEmail.value, lPassword.value).catch(function(error) {
+          var errorCode = error.code
+          var errorMessage = error.message
+          alert(errorMessage)
+        })
+      }
+
+      firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+          l.innerHTML = "Logged in as " + user.email
+          window.location.replace('home.html')
+        }
+      })
+    </script>
+  </body>
+</html>

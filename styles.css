@@ -1,0 +1,74 @@
+body {
+  text-align: center;
+  background: #D74E4E;
+  color: #c4d0c9;
+}
+
+/* index.html */
+#signOut {
+  margin-bottom: 10px;
+  background-color: #c4d0c9;
+  color: #D74E4E;
+  border-radius: 8px;
+  border: none;
+}
+
+#welcome {
+  margin-bottom: 5px;
+}
+
+#newItem {
+  width: auto;
+  height: auto;
+  font-size: 20px;
+  margin-left: 60px;
+  color: #D74E4E;
+  background-color: #c4d0c9;
+}
+
+#add {
+  width: auto;
+  height: auto;
+  font-size: 18px;
+  background-color: #c4d0c9;
+  color: #D74E4E;
+  border-radius: 6px;
+  border: none;
+}
+
+.list {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* login.html */
+.lHeader, .rHeader {
+  margin-top: 50px;
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+
+#lButton, #rButton {
+  background-color: #c4d0c9;
+  color: #D74E4E;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+}
+
+#registerButton, #loginButton {
+  color: #c4d0c9;
+}
+
+#lEmail, #lPassword, #rEmail, #rPassword {
+  width: auto;
+  height: auto;
+  font-size: 20px;
+  color: #D74E4E;
+  background-color: #c4d0c9;
+  margin-bottom: 10px;
+}
+
+#lEmail, #rEmail {
+  margin-left: 70px;
+}

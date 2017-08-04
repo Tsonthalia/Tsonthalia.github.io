@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="welcome">Welcome, </h1>
+    <button id="signOut" type="submit">Sign Out</button>
+    <br>
+    <input id="newItem" type="text" name="newItem">
+    <input id="add" type="submit" name="" value="Add Item">
+    <br>
+    <ul class="list"></ul>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBrpM4NxrijFkniKo4fI3eubaDmsF3r-eY",
+        authDomain: "todo-list-72672.firebaseapp.com",
+        databaseURL: "https://todo-list-72672.firebaseio.com",
+        projectId: "todo-list-72672",
+        storageBucket: "",
+        messagingSenderId: "515541036119"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <script>
+      var compliment = document.querySelector('ul')
+      var message = document.getElementById('newItem')
+      var add = document.getElementById('add')
+
+      var user = firebase.auth().currentUser
+      var userRef
+
+      var database = firebase.database()
+      //var reference = database.ref('tanay')
+
+      firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+          welcome.innerHTML = user.email
+          console.log(user.email);
+          userRef = database.ref(user.uid)
+
+          userRef.on("child_added", function(snapshot) {
+            console.log(snapshot.val());
+            var item = document.createElement("li")
+            item.innerText = snapshot.val()
+            item.style.fontSize = "20px"
+            var remove = document.createElement("button")
+            remove.innerText = "×"
+            remove.style.fontSize = "17px"
+            remove.style.background = "none"
+            remove.style.border = "none"
+            remove.style.color = "white"
+            item.appendChild(remove)
+            remove.onclick = function() {
+              snapshot.ref.remove()
+              compliment.removeChild(item)
+            }
+
+            compliment.appendChild(item)
+
+          }, function (errorObject) {
+            console.log("The read failed: " + errorObject.code);
+          });
+        }
+      })
+
+      signOut.onclick = function() {
+        firebase.auth().signOut().then(function() {
+          welcome.innerHTML = "Sign out Successful"
+          window.location.replace('index.html')
+        }).catch(function(error) {
+          welcome.innerHTML = "Sign out Unsuccessful"
+        })
+      }
+
+      /*
+      submit.onclick = function() {
+        reference.set(newItem.value)
+      }
+
+      reference.on("value", function(snapshot) {
+        compliment.innerHTML = snapshot.val()
+      })
+      */
+
+      add.onclick = function AddingItem() {
+        if (message.value == "") {
+          alert('Nothing entered')
+        }
+        else {
+          userRef.push(newItem.value)
+          message.value = ''
+        }
+      }
+
+
+    </script>
+  </body>
+</html>
