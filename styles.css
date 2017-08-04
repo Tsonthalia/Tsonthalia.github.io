@@ -30,6 +30,7 @@ body {
   border-radius: 20px;
   border: none;
   margin-bottom: 10px;
+  width: 1000px;
 }
 
 #add {
@@ -74,4 +75,5 @@ body {
   color: #D74E4E;
   background-color: #c4d0c9;
   margin-bottom: 10px;
+  width: 1000px;
 }
