@@ -11,28 +11,36 @@ body {
   color: #D74E4E;
   border-radius: 8px;
   border: none;
+  font-size: 50px;
+  float: right;
+  margin-right: 10px
 }
 
 #welcome {
-  margin-bottom: 5px;
+  text-align: left;
+  margin-bottom: -100px;
+  font-size: 100px;
 }
 
 #newItem {
   width: auto;
   height: auto;
-  font-size: 20px;
-  margin-left: 60px;
+  font-size: 100px;
   color: #D74E4E;
   background-color: #c4d0c9;
+  margin-right: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: none;
 }
 
 #add {
   width: auto;
   height: auto;
-  font-size: 18px;
+  font-size: 100px;
   background-color: #c4d0c9;
   color: #D74E4E;
-  border-radius: 6px;
+  border-radius: 20px;
   border: none;
 }
 
@@ -44,31 +52,28 @@ body {
 /* login.html */
 .lHeader, .rHeader {
   margin-top: 50px;
-  font-size: 50px;
+  font-size: 200px;
   margin-bottom: 5px;
 }
 
 #lButton, #rButton {
   background-color: #c4d0c9;
   color: #D74E4E;
-  border-radius: 8px;
+  border-radius: 20px;
   border: none;
-  font-size: 20px;
+  font-size: 100px;
 }
 
 #registerButton, #loginButton {
   color: #c4d0c9;
+  font-size: 80px;
 }
 
 #lEmail, #lPassword, #rEmail, #rPassword {
   width: auto;
   height: auto;
-  font-size: 20px;
+  font-size: 100px;
   color: #D74E4E;
   background-color: #c4d0c9;
   margin-bottom: 10px;
-}
-
-#lEmail, #rEmail {
-  margin-left: 70px;
 }
