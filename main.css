@@ -20,11 +20,6 @@ body {
     text-align: center;
 }
 
-#headerImg {
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
-
 /*@media only screen and (max-width: 1200px) {
     #headerImg {
         width: 100%;
@@ -37,7 +32,7 @@ body {
     height: 300px;
     border: 10px solid #B0D1FF;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 #headerText {
@@ -91,4 +86,39 @@ body {
     display: inline-block;
     margin: 10px;
     text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    #profilePic {
+        width: 300px;
+        height: 300px;
+    }
+    
+    #headerText h1 {
+        font-size: 80px;
+    }
+    
+    #headerText h3 {
+        font-size: 50px;
+    }
+    
+    #aboutMe h1 {
+        font-size: 50px;
+    }
+    
+    #aboutMe p {
+        font-size: 20px;
+    }
+    
+    #projects h1 {
+        font-size: 50px;
+    }
+    
+    #certainProject h3 {
+        font-size: 40px;
+    }
+    
+    #certainProject p {
+        font-size: 20px;
+    }
 }
