@@ -81,7 +81,7 @@ body {
     padding-left: 5px;
     padding-right: 5px;
     padding-top: -30px;
-    width: 300px;
+    width: 30%;
     height: auto;
     display: inline-block;
     margin: 10px;
@@ -89,36 +89,43 @@ body {
 }
 
 @media only screen and (max-width: 1200px) {
-    #profilePic {
-        width: 300px;
-        height: 300px;
+    #headerImg {
+    }
+    
+    #headerImg img{
+        width: 500px;
+        height: 500px;
     }
     
     #headerText h1 {
-        font-size: 80px;
+        font-size: 130px;
     }
     
     #headerText h3 {
-        font-size: 50px;
+        font-size: 80px;
     }
     
     #aboutMe h1 {
-        font-size: 50px;
+        font-size: 80px;
     }
     
     #aboutMe p {
-        font-size: 20px;
-    }
-    
-    #projects h1 {
-        font-size: 50px;
-    }
-    
-    #certainProject h3 {
         font-size: 40px;
     }
     
+    #projects h1 {
+        font-size: 80px;
+    }
+    
+    #certainProject {
+        width: 90%;
+    }
+    
+    #certainProject h3 {
+        font-size: 60px;
+    }
+    
     #certainProject p {
-        font-size: 20px;
+        font-size: 40px;
     }
 }
