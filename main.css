@@ -97,29 +97,29 @@ body {
     }
     
     #headerImg img{
-        width: 400px;
-        height: 400px;
+        width: 350px;
+        height: 350px;
         border: 15px solid #B0D1FF;
     }
     
     #headerText h1 {
-        font-size: 100px;
+        font-size: 80px;
     }
     
     #headerText h3 {
-        font-size: 60px;
+        font-size: 50px;
     }
     
     #aboutMe h1 {
-        font-size: 60px;
+        font-size: 50px;
     }
     
     #aboutMe p {
-        font-size: 40px;
+        font-size: 20px;
     }
     
     #projects h1 {
-        font-size: 60px;
+        font-size: 50px;
     }
     
     #certainProject {
@@ -127,10 +127,10 @@ body {
     }
     
     #certainProject h3 {
-        font-size: 50px;
+        font-size: 30px;
     }
     
     #certainProject p {
-        font-size: 40px;
+        font-size: 20px;
     }
 }
