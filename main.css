@@ -102,15 +102,15 @@ body {
     }
     
     #headerText h1 {
-        font-size: 130px;
+        font-size: 100px;
     }
     
     #headerText h3 {
-        font-size: 80px;
+        font-size: 60px;
     }
     
     #aboutMe h1 {
-        font-size: 80px;
+        font-size: 60px;
     }
     
     #aboutMe p {
@@ -118,7 +118,7 @@ body {
     }
     
     #projects h1 {
-        font-size: 80px;
+        font-size: 60px;
     }
     
     #certainProject {
@@ -126,7 +126,7 @@ body {
     }
     
     #certainProject h3 {
-        font-size: 60px;
+        font-size: 50px;
     }
     
     #certainProject p {
