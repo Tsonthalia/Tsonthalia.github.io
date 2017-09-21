@@ -3,7 +3,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding-top: 40px;
+    text-align: center;
 }
 
 .overlay {
@@ -98,6 +98,7 @@ body {
     #headerImg img{
         width: 500px;
         height: 500px;
+        border: 15px solid #B0D1FF;
     }
     
     #headerText h1 {
@@ -130,6 +131,5 @@ body {
     
     #certainProject p {
         font-size: 40px;
-        border: 3px solid #B0D1FF;
     }
 }
