@@ -72,14 +72,14 @@ body {
     font-size: 18px;
 }
 
-#projects {
+#project {
     float: left;
     padding: 20px;
     color: #B0D1FF; 
     text-align: center;
 }
 
-#projects h1 {
+#project h1 {
     padding-bottom: 10px;
 }
 
@@ -129,7 +129,7 @@ body {
         font-size: 20px;
     }
     
-    #projects h1 {
+    #project h1 {
         font-size: 40px;
     }
     
