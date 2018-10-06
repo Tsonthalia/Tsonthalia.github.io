@@ -4,150 +4,57 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.css">
-        <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.css.map">
-        <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css.map">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!--
         <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
         <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css.map">
-        <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    </head>
-    <body data-spy="scroll" data-target=".navbar" data-offset="50">
-        <!--
-        <nav style="background-color: #B0D1FF" class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <b><a style="font-size: 30px" class="navbar-brand" href="#">Tanay Sonthalia</a></b>
-                </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul style="font-size: 20px" class="nav navbar-nav navbar-right">
-                        <li><a href="#aboutMe">About Me</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
         -->
-        
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>                        
-                    </button>
-                    <a style="font-size: 25px" class="navbar-brand" href="#">Tanay Sonthalia</a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul style="font-size: 25px" class="nav navbar-nav navbar-right">
-                        <li><a href="#aboutMe">About Me</a></li>
-                        <li><a href="#project">Projects</a></li>
-                        <li style="padding-right: 10px"><a href="#">Contact</a></li>
-                        <!--
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#aboutMe">About Me</a></li>
-                                <li><a href="#projects">Projects</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </li>
-                        -->
-                        
-                    </ul>
-                </div>
-            </div>
-        </nav>
 
-        <div class="overlay">
-            <div id="header">
-                <div id="headerImg">
-                    <center><img id="profilePic" src="ProfilePicSuit.jpg"></center>
-                </div>
-                <div id="headerText">
-                    <h1><strong>Tanay Sonthalia</strong></h1>
-                    <h3>Developer / Student</h3>
-                </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    </head>
+    <body style="background-color: #F8F8FF">
+      <div class="navbar">
+        <ul>
+          <li>Tanay</li>
+          <li style="color: #6E9BEA">Sonthalia</li>
+          <div class="navbarChoice">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+          </div>
+        </ul>
+      </div>
+
+      <center>
+        <div class="mainInfo">
+          <div class="header">
+            <img src="ProfilePicSuit.jpg" id="profilePic">
+            <div class="name">
+              <h1>Tanay Sonthalia</h1>
+              <h3>Programmer | Learner</h3>
             </div>
-            <div id="aboutMe">
-                <center><h1>About Me</h1></center>
-                <p>
-                    I am a sophomore at Mountain View High School in California. Being a part of something for a greater cause has always excited me. My interests mostly include technology and finding new applications for it. The applications of technology are endless and I want to explore them.
-                </p>
+          </div>
+          <div class="info">
+            <div class="synopsis">
+              <h2 style="display: inline-block">About&nbsp</h2><h2 style="color: #6E9BEA; display: inline-block">Me</h2><h2 style="display:inline-block">:</h2>
+              <p>Hey I'm Tanay!</p>
             </div>
-            <div id="project">
-                <h1>My Projects</h1>
-                <a style="text-decoration: none; color: #B0D1FF" href="https://github.com/tsonthalia/tsonthalia.github.io">
-                    <div id="certainProject">
-                        <h3>tanay.gq</h3>
-                        <p>
-                            This contains the code to this website.
-                        </p>
-                    </div>
-                </a>
-                <a style="text-decoration: none; color: #B0D1FF" href="#">
-                    <div id="certainProject">
-                        <h3>Project 1</h3>
-                        <p>
-                            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                        </p>
-                    </div>
-                </a>
-                <a style="text-decoration: none; color: #B0D1FF" href="#">
-                    <div id="certainProject">
-                        <h3>Project 1</h3>
-                        <p>
-                            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                        </p>
-                    </div>
-                </a>
-                <a style="text-decoration: none; color: #B0D1FF" href="#">
-                    <div id="certainProject">
-                        <h3>Project 1</h3>
-                        <p>
-                            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                        </p>
-                    </div>
-                </a>
-                <a style="text-decoration: none; color: #B0D1FF" href="#">
-                    <div id="certainProject">
-                        <h3>Project 1</h3>
-                        <p>
-                            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                        </p>
-                    </div>
-                </a>
+            <div class="basicInfo">
+              <h2 style="display: inline-block">Basic&nbsp</h2><h2 style="color: #6E9BEA; display: inline-block">Info</h2><h2 style="display:inline-block">:</h2>
+              <p>tsonthalia@gmail.com</p>
+              <p>(650) 495-8298</p>
+              <p>Mountain View, California</p>
             </div>
+          </div>
+          <div class="socialMedia fa-2x">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-github"></a>
+          </div>
         </div>
-        
-        <div id="contact">
-            <form action="https://formspree.io/tsonthalia@gmail.com" method="POST">
-                <input type="text" name="name">
-                <input type="email" name="_replyto">
-                <input type="submit" value="Send">
-            </form>
-        </div>
-        
-        <script>
-            var navOffset = $('.navbar').height();
-            $('.navbar li a').click(function(event) {
-                var href = $(this).attr('href');
-
-                // Don't let the browser scroll, but still update the current address
-                // in the browser.
-                event.preventDefault();
-                window.location.hash = href;
-
-                // Explicitly scroll to where the browser thinks the element
-                // is, but apply the offset.
-                $(href)[0].scrollIntoView();
-                window.scrollBy(0, -navOffset);
-            });
-        </script>
+      </center>
     </body>
 </html>

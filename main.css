@@ -1,147 +1,144 @@
-body {
-    background-image: url(https://wallpaperscraft.com/image/black_background_lines_scratches_69440_2048x1152.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    text-align: center;
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+.navbar {
+  font-family: "Trebuchet MS";
+  font-size: 20px;
+  padding-top: 10px;
+  margin-left: 20px;
 }
 
-.overlay {
-    background-color: rgba(0, 0, 0, 0.2);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 200%;
-    z-index: 1;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbarChoice {
+  float: right;
+  display: inline;
+}
+
+.navbarChoice a {
+  text-decoration: none;
+  color: black;
+  margin-left: 30px;
+  margin-right: 20px;
+}
+
+.mainInfo {
+  width: 800px;
+  height: auto;
+  color: white;
+  font-family: "Trebuchet MS";
+  margin-top: 50px;
+
+  position: relative;
+}
+
+.header {
+  width: 800px;
+  height: 300px;
+  background-color: #6E9BEA;
+
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  position: relative;
+}
+
+.name {
+  width: 400px;
+
+  float: right;
+  text-align: center;
+  padding-right: 75px;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%)
 }
 
 #profilePic {
-    width: 50px;
-    height: 50px;
-    text-align: center;
+  width: 250px;
+  height: 250px;
+  border: 5px solid white;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%)
 }
 
-/*@media only screen and (max-width: 1200px) {
-    #headerImg {
-        width: 100%;
-        float: none;
-    }
-}*/
+/** bottom half **/
+.info {
+  width: 800px;
+  height: 200px;
+  color: black;
+  background-color: white;
 
-#headerImg img {
-    width: 300px;
-    height: 300px;
-    border: 10px solid #B0D1FF;
-    text-align: center;
-    margin-top: 80px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  display: table;
+  position: relative;
+  padding-top: 30px;
 }
 
-#headerText {
-    color: #B0D1FF;
-    font-family: fantasy;
+.synopsis {
+  width: 50%;
+  text-align: left;
+
+  float: left;
+  padding-left: 30px;
+  display: table-column;
 }
 
-/*@media only screen and (max-width: 1200px) {
-    #headerText {
-        width: 100%;
-        float: none;
-        padding-top: 10px;
-    }
-}*/
+.basicInfo {
+  width: 40%;
 
-#headerText h1 {
-    font-size: 60px;
-    text-align: center;
+  float: right;
+  text-align: left;
+  display: table-column;
 }
 
-#headerText h3 {
-    font-size: 30px;
-    text-align: center;
+p {
+  padding-left: 10px;
+  margin-top: -5px;
 }
 
-#aboutMe {
-    float: left;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    background-color: rgba(176, 209, 255, 0.7);
-    opacity: 50%;
+.socialMedia {
+  height: 300px;
+  margin-top: 20px;
 }
 
-#aboutMe p {
-    font-size: 18px;
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
 }
 
-#project {
-    float: left;
-    padding: 20px;
-    color: #B0D1FF; 
-    text-align: center;
+.fa-facebook {
+    background: #6E9BEA;
+    color: white;
 }
 
-#project h1 {
-    padding-bottom: 10px;
+.fa-instagram {
+  background: #6E9BEA;
+  color: white;
 }
 
-#certainProject {
-    border: 2px solid #B0D1FF;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: -30px;
-    width: 250px;
-    height: auto;
-    display: inline-block;
-    margin: 10px;
-    text-align: center;
+.fa-linkedin {
+  background: #6E9BEA;
+  color: white;
 }
 
-#certainProject p {
-    font-size: 18px;
-}
-
-#certainProject:hover {
-    background-color: black;
-}
-
-@media only screen and (max-width: 1200px) {
-    #headerImg {
-    }
-    
-    #headerImg img{
-        width: 350px;
-        height: 350px;
-        border: 15px solid #B0D1FF;
-    }
-    
-    #headerText h1 {
-        font-size: 60px;
-    }
-    
-    #headerText h3 {
-        font-size: 40px;
-    }
-    
-    #aboutMe h1 {
-        font-size: 40px;
-    }
-    
-    #aboutMe p {
-        font-size: 20px;
-    }
-    
-    #project h1 {
-        font-size: 40px;
-    }
-    
-    #certainProject {
-        width: 90%;
-    }
-    
-    #certainProject h3 {
-        font-size: 30px;
-    }
-    
-    #certainProject p {
-        font-size: 20px;
-    }
+.fa-github {
+  background: #6E9BEA;
+  color: white;
 }
