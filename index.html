@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+        <script src="https://unpkg.com/scrollreveal"></script>
         <!--
         <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
         <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css.map">
@@ -21,7 +21,7 @@
           <li style="color: #6E9BEA">Sonthalia</li>
           <div class="navbarChoice">
             <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#projects" class="projectsButton">Portfolio</a></li>
             <li><a href="contact.html">Contact Me</a></li>
           </div>
         </ul>
@@ -30,7 +30,7 @@
       <center>
         <div class="mainInfo">
           <div class="header">
-            <img src="ProfilePicSuit.jpg" id="profilePic">
+            <img src="proPic.jpg" id="profilePic">
             <div class="name">
               <h1>Tanay Sonthalia</h1>
               <h3>Programmer | Learner</h3>
@@ -54,17 +54,67 @@
               <p>Mountain View, California</p>
             </div>
           </div>
-          <div class="socialMedia fa-2x">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-linkedin"></a>
-            <a href="#" class="fa fa-github"></a>
+        </div>
+
+        <div class="projects" id="projects">
+          <h1>Portfolio:</h1>
+          <div class="projectCell">
+            <h2>ToDo List</h2>
+            <p>This website uses Firebase Authentication and Database to store the todo items that a user inputs.</p>
+          </div>
+          <div class="projectCell">
+            <h2>Name:</h2>
+            <p>Description</p>
+          </div>
+          <div class="projectCell">
+            <h2>Name:</h2>
+            <p>Description</p>
+          </div>
+          <div class="projectCell">
+            <h2>Name:</h2>
+            <p>Description</p>
           </div>
         </div>
 
-        <div class="projects">
-          
+
+
+        <div class="socialMedia fa-2x">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-github"></a>
         </div>
       </center>
+
+      <script type="text/javascript">
+        ScrollReveal().reveal('.projects', {reset: true, delay: 100});
+        ScrollReveal().reveal('.projectCell', {reset: true, delay: 100});
+        ScrollReveal().reveal('.socialMedia', {reset: true, delay: 100});
+
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $(".projectsButton").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+
+              // Store hash
+              var hash = this.hash;
+
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+      </script>
     </body>
 </html>
