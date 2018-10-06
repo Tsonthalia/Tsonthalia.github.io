@@ -1,5 +1,7 @@
 @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 
+
+/* navbar */
 .navbar {
   font-family: "Trebuchet MS";
   font-size: 20px;
@@ -7,7 +9,7 @@
   margin-left: 20px;
 }
 
-ul {
+.ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -29,6 +31,8 @@ ul {
   margin-right: 20px;
 }
 
+
+/* main info */
 .mainInfo {
   width: 800px;
   height: auto;
@@ -39,7 +43,7 @@ ul {
   position: relative;
 }
 
-.header {
+.mainInfo .header {
   width: 800px;
   height: 300px;
   background-color: #6E9BEA;
@@ -49,7 +53,7 @@ ul {
   position: relative;
 }
 
-.name {
+.mainInfo .name {
   width: 400px;
 
   float: right;
@@ -61,7 +65,7 @@ ul {
   transform: translateY(-50%)
 }
 
-#profilePic {
+.mainInfo #profilePic {
   width: 250px;
   height: 250px;
   border: 5px solid white;
@@ -71,8 +75,7 @@ ul {
   transform: translateY(-50%)
 }
 
-/** bottom half **/
-.info {
+.mainInfo .info {
   width: 800px;
   height: 200px;
   color: black;
@@ -86,7 +89,7 @@ ul {
   padding-top: 30px;
 }
 
-.synopsis {
+.mainInfo .synopsis {
   width: 50%;
   text-align: left;
 
@@ -95,7 +98,7 @@ ul {
   display: table-column;
 }
 
-.basicInfo {
+.mainInfo .basicInfo {
   width: 40%;
 
   float: right;
@@ -103,16 +106,21 @@ ul {
   display: table-column;
 }
 
-p {
+.mainInfo p {
   padding-left: 10px;
   margin-top: -5px;
 }
 
-.socialMedia {
+.mainInfo .socialMedia {
   height: auto;
   margin-top: 20px;
 }
 
+
+
+
+
+/* fa - icons for social media */
 .fa {
   padding: 20px;
   font-size: 30px;
