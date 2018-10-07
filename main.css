@@ -44,7 +44,7 @@
 
 /* main info */
 .mainInfo {
-  width: 800px;
+  width: auto;
   height: auto;
   color: white;
   font-family: "Trebuchet MS";
@@ -54,17 +54,18 @@
 }
 
 .mainInfo .header {
-  width: 800px;
+  width: 70%;
   height: 300px;
   background-color: #6E9BEA;
 
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   position: relative;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .mainInfo .name {
-  width: 400px;
+  width: 50%;
 
   float: right;
   text-align: center;
@@ -76,17 +77,16 @@
 }
 
 .mainInfo #profilePic {
-  width: 250px;
-  height: 250px;
+  width: 25%;
+  height: auto;
   border: 5px solid white;
-
   position: absolute;
   top: 50%;
   transform: translateY(-50%)
 }
 
 .mainInfo .info {
-  width: 800px;
+  width: 70%;
   height: 200px;
   color: black;
   background-color: white;
@@ -97,6 +97,8 @@
   display: table;
   position: relative;
   padding-top: 10px;
+
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .mainInfo .synopsis {
@@ -125,9 +127,9 @@
 /* projects */
 
 .projects {
-  width: 800px;
+  width: 70%;
   border-radius: 20px;
-  background-color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   font-family: "Trebuchet MS";
   margin-top: 20px;
   display: table;
@@ -136,7 +138,7 @@
 .projects h1 {
   margin-left: 30px;
   padding-top: 20px;
-  color: #6E9BEA;
+  color: black;
   text-align: left;
   padding-left: 10px;
   padding-right: 10px;
@@ -154,6 +156,55 @@
   padding-right: 20px;
 }
 
+/* contact me */
+.contactMe {
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 20px;
+  width: 70%;
+  font-family: "Trebuchet MS";
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.contactMe h1 {
+  margin-left: 30px;
+  padding-top: 20px;
+  color: black;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.contactMe input {
+  margin-bottom: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  border-style: none;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  width: 50%;
+}
+
+.contactMe #descriptionInput {
+  font-size: 20px;
+  word-wrap: normal;
+  width: 50%;
+  height: 25%;
+  top: 0;
+  border-radius: 5px;
+  border-style: none;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.contactMe button {
+  font-size: 20px;
+  background-color: #6E9BEA;
+  color: white;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 20%;
+  height: 5%;
+}
 /* fa - icons for social media */
 .socialMedia {
   height: auto;
