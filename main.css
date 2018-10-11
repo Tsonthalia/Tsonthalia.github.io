@@ -179,8 +179,9 @@
   margin-bottom: 10px;
   font-size: 20px;
   border-radius: 5px;
-  border-style: none;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border: 1px solid #ccc;
+  /**border-style: none;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);**/
   width: 50%;
 }
 
@@ -191,8 +192,9 @@
   height: 25%;
   top: 0;
   border-radius: 5px;
-  border-style: none;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border: 1px solid #ccc;
+  /**border-style: none;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);**/
 }
 
 .contactMe button {
