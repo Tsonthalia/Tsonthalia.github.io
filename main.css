@@ -65,8 +65,8 @@ body {
   height: 300px;
   background-color: #6E9BEA;
 
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   position: relative;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -98,8 +98,8 @@ body {
   color: black;
   background-color: white;
 
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 
   display: table;
   position: relative;
@@ -135,7 +135,7 @@ body {
 
 .projects {
   width: 70%;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   font-family: "Trebuchet MS";
   margin-top: 20px;
@@ -158,7 +158,7 @@ body {
   width: 35%;
   color: white;
   background-color: #6E9BEA;
-  border-radius: 20px;
+  border-radius: 10px;
   display: inline-block;
   padding-left: 20px;
   padding-right: 20px;
@@ -167,7 +167,7 @@ body {
 /* contact me */
 .contactMe {
   background-color: white;
-  border-radius: 20px;
+  border-radius: 10px;
   margin-top: 20px;
   width: 70%;
   font-family: "Trebuchet MS";
@@ -249,4 +249,82 @@ body {
 .fa-github {
   background: #6E9BEA;
   color: white;
+}
+
+
+
+
+
+
+/* Specific to tutorials.html */
+.tutorials {
+  width: 95%;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  font-family: "Trebuchet MS";
+  margin-top: 50px;
+  display: table;
+  background-color: white;
+}
+
+.tutorials h1 {
+  margin-left: 30px;
+  padding-top: 20px;
+  color: black;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.tutorials .projectCell {
+  margin-left: 30px;
+  margin-bottom: 30px;
+  width: 35%;
+  color: white;
+  background-color: #6E9BEA;
+  border-radius: 10px;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.tutorials a {
+  text-decoration: none;
+}
+
+.tutorials a :hover {
+  background-color: #6E9BFB;
+}
+
+.tutorialDoc {
+  margin-left: 5%;
+  margin-top: 30px;
+}
+
+iframe {
+  position: absolute;
+  width: 70%;
+  height: 85%;
+  align-content: center;
+  border: none;
+}
+
+/* Style buttons */
+.btn {
+  background-color: white;
+  border: none;
+  color: DodgerBlue;
+  width: 20%;
+  height: 85%;
+  margin-right: 20px;
+  padding-right: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  float: right;
+  align-content: center;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
