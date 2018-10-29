@@ -454,7 +454,7 @@ iframe {
   }
 
   .projects .projectCell {
-    margin-left: 10%;
+    margin-left: 0px;
     margin-bottom: 30px;
     width: 80%;
     color: white;
