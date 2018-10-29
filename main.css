@@ -442,7 +442,6 @@ iframe {
     margin-top: 20px;
     display: table;
     background-color: white;
-    text-align: center;
   }
 
   .projects h1 {
@@ -455,7 +454,7 @@ iframe {
   }
 
   .projects .projectCell {
-    margin-left: 0px;
+    margin-left: 10%;
     margin-bottom: 30px;
     width: 80%;
     color: white;
