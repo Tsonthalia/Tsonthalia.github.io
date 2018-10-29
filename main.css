@@ -210,6 +210,7 @@ body {
   background-color: #6E9BEA;
   color: white;
   border-radius: 10px;
+  bord
   margin-top: 10px;
   margin-bottom: 10px;
   width: 20%;
@@ -224,7 +225,7 @@ body {
 .fa {
   padding: 20px;
   font-size: 30px;
-  width: 30px;
+  width: 70px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
