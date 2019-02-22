@@ -1,179 +1,76 @@
-<html>
-    <head>
-        <title>Tanay Sonthalia</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="icon" href="./favicon.ico">
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <!--
-        <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
-        <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css.map">
-        -->
+<!-- BUILT FROM SCRATCH BY TANAY SONTHALIA -->
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    </head>
-    <body style="background-color: white">
-      <div class="backgroundImg"></div>
-      <nav class="navbar transparent navbar-fixed-top">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="border: 2px solid black">
-              <span class="icon-bar" style="background-color: black"></span>
-              <span class="icon-bar" style="background-color: black"></span>
-              <span class="icon-bar" style="background-color: black"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">Tanay Sonthalia</a>
-          </div>
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#projects" class="projectsButton" style="color: black">Portfolio</a></li>
-              <li><a href="#contactMe" class="contactButton" style="color: black">Contact Me</a></li>
-              <li><a href="tutorials.html" class="tutorialButton" style="color: black">Tutorials</a></li>
-              <li><a href="resume.html" class="resumeButton" style="color: black">Resume</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!--
-      <div class="navbar">
-        <ul>
-          <li>Tanay</li>
-          <li style="color: #6E9BEA">Sonthalia</li>
-          <div class="navbarChoice">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#projects" class="projectsButton">Portfolio</a></li>
-            <li><a href="#contactMe" class="contactButton">Contact Me</a></li>
-            <li><a href="tutorials.html" class="tutorialButton">Tutorials</a></li>
-          </div>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <div class="navbar-header siteName">
+        <a class="navbar-brand" href="index.html">Tanay Sonthalia</a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="programmingProjects.html">Programming</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="engineeringProjects.html">Engineering</a>
+          </li>
         </ul>
       </div>
-      -->
-      <center>
-        <div class="mainInfo">
-          <div class="header">
-            <img src="proPic.jpg" id="profilePic">
-            <div class="name">
-              <h1>Tanay Sonthalia</h1>
-              <h3>Programmer • Learner</h3>
-              <div class="socialMedia fa-2x">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-                <a href="#" class="fa fa-github"></a>
-              </div>
-            </div>
-          </div>
-          <div class="info">
-            <div class="synopsis">
-              <h2 style="display: inline-block">About&nbsp</h2><h2 style="color: #6E9BEA; display: inline-block">Me</h2><h2 style="display:inline-block">:</h2>
-              <p>Hey I'm Tanay!</p>
-            </div>
-            <div class="basicInfo">
-              <h2 style="display: inline-block">Basic&nbsp</h2><h2 style="color: #6E9BEA; display: inline-block">Info</h2><h2 style="display:inline-block">:</h2>
-              <p>tsonthalia@gmail.com</p>
-              <p>Mountain View, California</p>
-            </div>
+    </nav>
+
+    <div class="desktop">
+      <div class="rightSkew">
+        <div class="personalImageDiv">
+          <img src="images/personalPic.jpeg" alt="" class="personalImage">
+        </div>
+        <div class="personalInfo">
+          <h1>Tanay Sonthalia</h1>
+          <h2>Developer &nbsp • &nbsp Engineer</h2>
+          <div class="socialMedia">
+            <a href="#" class="fa fa-github"></a>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+
           </div>
         </div>
+      </div>
 
-        <div class="projects" id="projects">
-          <h1>Portfolio:</h1>
-          <div class="projectCell">
-            <h2>ToDo List</h2>
-            <p>This website uses Firebase Authentication and Database to store the todo items that a user inputs.</p>
-          </div>
-          <div class="projectCell">
-            <h2>Name:</h2>
-            <p>Description</p>
-          </div>
-          <div class="projectCell">
-            <h2>Name:</h2>
-            <p>Description</p>
-          </div>
-          <div class="projectCell">
-            <h2>Name:</h2>
-            <p>Description</p>
-          </div>
-        </div>
+      <div class="aboutMe section">
+        <h2 class="sectionHeader">About Me:</h2>
+        <p class="sectionText">My name is Tanay Sonthalia and I am a Junior at Mountain View High School. I love programming and engineering. In my free time, I often create different websites such as this one. I also teach programming through various organizations including OracleCodeOne4Kids, CoderDojo, Devoxx4Kids, and many more.</p>
 
-        <div class="contactMe" id="contactMe">
-          <h1>Contact Me:</h1>
-          <form class="" action="mailto:tsonthalia@gmail.com?Subject=Personal%20Website%20Notification" method="post">
-            <input type="text" placeholder=" Name*" name="" value="">
-            <br>
-            <input type="email" placeholder=" Email*" name="" value="">
-            <br>
-            <textarea placeholder=" Description*" name="name" rows="8" cols="80" id="descriptionInput"></textarea>
-            <br>
-            <button type="submit" name="button">Submit</button>
-          </form>
-        </div>
+        <img src="images/presentation.jpg" alt="">
+      </div>
 
-        <div class="socialMedia fa-2x" style="margin-bottom: 20px">
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-instagram"></a>
-          <a href="#" class="fa fa-linkedin"></a>
-          <a href="#" class="fa fa-github"></a>
-        </div>
-      </center>
+      <div class="leftSkew section" style="padding-bottom: 50px">
+        <h2 class="sectionHeader">Contact Me:</h2>
+        <form class="" action="index.html" method="get">
+          <input type="text" name="" value="" placeholder="Name">
+          <br>
+          <input type="text" name="" value="" placeholder="Subject">
+          <br>
+          <textarea type="text" name="" value="" placeholder="Message"></textarea>
 
-      <script type="text/javascript">
-        ScrollReveal().reveal('.projects', {delay: 100});
-        ScrollReveal().reveal('.projectCell', {delay: 100});
-        ScrollReveal().reveal('.socialMedia', {delay: 100});
-        ScrollReveal().reveal('.contactMe', {delay: 100});
+          <button type="submit" name="button">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="mobile">
 
-        $(document).ready(function(){
-          // Add smooth scrolling to all links
-          $(".projectsButton").on('click', function(event) {
-
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-              // Prevent default anchor click behavior
-              event.preventDefault();
-
-              // Store hash
-              var hash = this.hash;
-
-              // Using jQuery's animate() method to add smooth page scroll
-              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-              $('html, body').animate({
-                scrollTop: $(hash).offset().top
-              }, 800, function(){
-
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-              });
-            } // End if
-          });
-
-          $(".contactButton").on('click', function(event) {
-
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-              // Prevent default anchor click behavior
-              event.preventDefault();
-
-              // Store hash
-              var hash = this.hash;
-
-              // Using jQuery's animate() method to add smooth page scroll
-              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-              $('html, body').animate({
-                scrollTop: $(hash).offset().top
-              }, 800, function(){
-
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-              });
-            } // End if
-          });
-        });
-      </script>
-    </body>
+    </div>
+    <!--Header Div-->
+    <script src="site.js" type="text/javascript"></script>
+  </body>
 </html>

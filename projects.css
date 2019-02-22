@@ -1,0 +1,64 @@
+/* BUILT FROM SCRATCH BY TANAY SONTHALIA */
+
+@import url('https://fonts.googleapis.com/css?family=Acme|Dosis|Open+Sans');
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+
+    background: #41ade5;
+    color: white;
+}
+
+.navbar {
+  font-family: 'Dosis', sans-serif;
+}
+
+.desktop .section {
+  position: relative;
+  padding-top: 70px;
+  left: 6%;
+}
+
+.desktop .sectionHeader {
+  font-family: 'Acme', sans-serif;
+  font-size: 50px;
+}
+
+.desktop .sectionText {
+  font-family: 'Dosis', sans-serif;
+  font-size: 20px;
+}
+
+.desktop .projectCell {
+  width: 28%;
+  border: 4px solid white;
+  padding: 8px;
+
+  display: inline-block;
+  margin: 10px;
+
+  font-family: 'Dosis', sans-serif;
+
+  text-align: center;
+}
+
+.desktop .projectCell img {
+  width: 100%;
+}
+
+.desktop .projectCell p {
+  font-size: 20px;
+}
+
+.desktop .projectCell button {
+  background-color: white;
+  color: #41ade5;
+  border: none;
+  margin-top: 10px;
+  display: inline-block;
+}
