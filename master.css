@@ -214,6 +214,121 @@ html,body
 }
 
 /* Mobile Version */
-.mobile {
+@media only screen and (max-width: 600px) {
+  .desktop .rightSkew {
+    height: 1000px;
+  }
 
+  .desktop .rightSkew:after {
+    transform: skewY(0deg);
+    height: 1000px;
+  }
+
+  .header {
+    height: 2000px;
+  }
+
+  .desktop .personalImageDiv {
+    position: relative;
+    margin-left: 5%;
+    left: 0;
+  }
+
+  .desktop .personalImage {
+    width: 70%;
+    height: auto;
+    /*border-radius: 50%;*/
+  }
+
+  .desktop .personalInfo {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+
+  .desktop .personalInfo h1 {
+    font-size: 450%;
+  }
+
+
+  .desktop .socialMedia {
+    font-size: 30px;
+  }
+
+  .desktop .fa {
+    width: 75px;
+    padding: 5%;
+    text-align: center;
+    text-decoration: none;
+
+    background-color: white;
+    color: #41ade5;
+
+    text-decoration: none;
+
+    margin-right: 10px;
+    margin-top: 10px;
+
+    border-radius: 50%;
+  }
+
+  .desktop .fa:hover {
+    text-decoration: none;
+  }
+
+  .desktop .section {
+    position: relative;
+    margin-top: 60px;
+    padding-left: 6%;
+  }
+
+  .desktop .sectionHeader {
+    font-family: 'Acme', sans-serif;
+    font-size: 50px;
+  }
+
+  .desktop .sectionText {
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+  }
+
+  .desktop .aboutMe {
+    height: 400px;
+  }
+
+
+  .desktop .aboutMe p {
+    margin-right: 6%;
+  }
+
+  .desktop .aboutMe img {
+    position: relative;
+    left: 0;
+    width: 88%;
+    height: auto;
+    top: 0%;
+  }
+
+
+  .desktop .leftSkew {
+    background: #41ade5;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+  }
+
+  .desktop .leftSkew:after {
+    background: inherit;
+    top: 0;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(0);
+    transform-origin: 100%;
+    z-index: -1;
+  }
 }

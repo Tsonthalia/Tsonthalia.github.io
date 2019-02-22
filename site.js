@@ -1,24 +1,4 @@
 // BUILT FROM SCRATCH BY TANAY SONTHALIA
-
-function detectmob() {
-   if(window.innerWidth <= 800 && window.innerHeight <= 600) {
-     return true;
-   } else {
-     return false;
-   }
-}
-
-var check = detectmob();
-if (check == true) {
-  $(".desktop").hide();
-
-  console.log("Mobile");
-} else {
-  $(".mobile").hide();
-  console.log("Desktop");
-}
-
-
 $(".desktop .rightSkew").height(window.innerHeight);
 
 $(".desktop .personalInfo h2").hide();
