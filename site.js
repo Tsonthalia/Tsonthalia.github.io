@@ -41,6 +41,3 @@ $(".desktop .projectCell img").hover(function() {
 
   //console.log($text);
 });
-
-
-$('textarea').autoResize();
