@@ -2,11 +2,14 @@
 $(".desktop .rightSkew").height(window.innerHeight);
 
 $(".desktop .personalInfo h2").hide();
-$(".desktop .personalInfo a").hide();
+$(".desktop .personalInfo .socialMedia").hide();
+$(".desktop .personalInfo a button").hide();
 
 $(".desktop .personalInfo h1").hide().fadeIn(500, function() {
   $(".desktop .personalInfo h2").fadeIn(500, function() {
-    $(".desktop .personalInfo a").fadeIn(500);
+    $(".desktop .personalInfo .socialMedia").fadeIn(500, function() {
+      $(".desktop .personalInfo a button").fadeIn(500);
+    });
   });
 });
 
